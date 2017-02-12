@@ -1,2 +1,3 @@
-# smpa3193-exercises
-Exercises for SMPA 3193
+# Exercises for SMPA 3193
+
+This repository contains exercises for SMPA 3193. 
