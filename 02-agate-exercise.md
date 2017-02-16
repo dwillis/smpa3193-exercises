@@ -1,6 +1,8 @@
 
 ### Agate Exercise
 
+  The easiest way to do this is to use the same terminal window that you used in class. If you closed it, using Terminal cd to the directory of your class repository and type `workon exercises` to turn on the virtualenv.
+
   1. Download the [mdcounty2014.csv](https://raw.githubusercontent.com/dwillis/smpa3193-exercises/master/mdcounty2014.csv) file to the directory where we've been working on Python in class (with the virtualenv already activated). If you have a Python session running, exit it using Control-D.
   2. Start your notebook by typing `jupyter notebook`; it should open http://localhost:8888/ in a browser.
   3. Using the `New` drop-down, choose `Python 2` notebook.
