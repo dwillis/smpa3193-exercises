@@ -1,7 +1,7 @@
 
 ### Agate Exercise
 
-  1. Download the [mdcounty2014.csv](mdcounty2014.csv) file to the directory where we've been working on Python in class (with the virtualenv already activated). If you have a Python session running, exit it using Control-D.
+  1. Download the [mdcounty2014.csv](https://raw.githubusercontent.com/dwillis/smpa3193-exercises/master/mdcounty2014.csv) file to the directory where we've been working on Python in class (with the virtualenv already activated). If you have a Python session running, exit it using Control-D.
   2. Start your notebook by typing `jupyter notebook`; it should open http://localhost:8888/ in a browser.
   3. Using the `New` drop-down, choose `Python 2` notebook.
   4. Name your notebook by clicking on `Untitled` and typing in "agate" and hitting the OK button.
