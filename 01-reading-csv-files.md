@@ -1,15 +1,9 @@
-### Reading CSV files (offline and online)
-
-#### Setup
-
-  1. Open your PythonAnywhere account, go to the Files tab and upload the `baby_names_nyc.csv` to your account.
-  2. Switch to your Consoles tab and then your already started bash console.
-  3. Type `ls` to see that your baby names csv file is there.
 
 #### Working with local CSV file
 
-  1. Start up a Python session by typing `python`
-  2. Let's import the tool we'll need to read in a CSV file: Python's [csv module](https://docs.python.org/2/library/csv.html), open the CSV file and then print out each row:
+  1. Download [this CSV file](https://raw.githubusercontent.com/dwillis/smpa3193-exercises/master/baby_names_nyc.csv) to your class folder inside your Desktop folder.
+  2. Open Terminal and start up a Python session by typing `python`
+  3. Let's import the tool we'll need to read in a CSV file: Python's [csv module](https://docs.python.org/2/library/csv.html), open the CSV file and then print out each row:
   ```python
   import csv
   file = open('baby_names_nyc.csv')
@@ -18,7 +12,16 @@
     print row
   ```
 
-  3. Try the last two lines again.
+  4. Try the last two lines again.
+  5. Let's loop through again, using a conditional to print out just those rows where the name is "IRENE"
+
+#### Local Setup
+
+Exit Python using Control-D and in the same directory, do the following commands from the command-line:
+
+  * `pip install virtualenvwrapper`
+  * `mkvirtualenv exercises`
+  * `pip install urllib3[secure] pyopenssl ndg-httpsclient pyasn1 requests`
 
 #### Working with an online CSV file
 
@@ -31,9 +34,11 @@
   ```python
   import csv
   import requests
-  url = ""
+  url = "https://raw.githubusercontent.com/dwillis/smpa3193-exercises/master/baby_names_nyc.csv"
   r = requests.get(url)
   csv_data = csv.reader(r.text)
   for row in csv_data:
     print row
   ```
+
+  Now let's do it again, trying to isolate on "ELIJAH".
