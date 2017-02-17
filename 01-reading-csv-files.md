@@ -45,7 +45,7 @@
   import requests
   url = "https://raw.githubusercontent.com/dwillis/smpa3193-exercises/master/baby_names_nyc.csv"
   r = requests.get(url)
-  csv_data = csv.reader(r.text)
+  csv_data = csv.reader(r.iter_lines())
   for row in csv_data:
     print row
   ```
