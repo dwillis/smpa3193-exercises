@@ -41,9 +41,11 @@
   print arrests
   ```
 
-  Here are the other checks we want to make:
+  Here are the other checks we want to make. In each case, write some Python code using Agate's functions to accomplish the tasks below (see the [cookbook](http://agate.readthedocs.io/en/1.5.5/cookbook.html) for examples, including Agate versions of common SQL ans Excel tasks).
 
-  1. Missing Data - let's start with `Charge Descrip`
-  2. Outliers - let's look at `Age`
-  3. Outliers - can you calculate the average (median) age for each charge?
-  4. Inconsistent data - how many rows have addresses within Alexandria (or versions of it)?
+  1. Missing Data - let's start with `Charge Descrip` and see whether every row has a charge description.
+  2. Outliers - let's look at `Age` and count the number of times each age appears, sorting from most to least.
+  3. Outliers - can you calculate the average (median) age for each charge description?
+  4. Inconsistent data - how many rows have addresses with Alexandria (or versions of Alexandria, including abbreviations)?
+
+  Don't worry too much about getting these perfect, and don't worry about running into errors. Use the examples from your earlier Agate work and from the cookbook, adapting them with the fields our arrest data has. If you get stuck on something, exit the jupyter notebook using Control-C and push the arrest.ipynb file to your Github repository and send me an email with your question and a link to your file.
