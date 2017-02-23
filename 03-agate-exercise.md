@@ -46,4 +46,4 @@
   1. Missing Data - let's start with `Charge Descrip`
   2. Outliers - let's look at `Age`
   3. Outliers - can you calculate the average (median) age for each charge?
-  
+  4. Inconsistent data - how many rows have addresses within Alexandria (or versions of it)?
