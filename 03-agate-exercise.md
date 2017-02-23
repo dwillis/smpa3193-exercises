@@ -49,3 +49,5 @@
   4. Inconsistent data - how many rows have addresses with Alexandria (or versions of Alexandria, including abbreviations)?
 
   Don't worry too much about getting these perfect, and don't worry about running into errors. Use the examples from your earlier Agate work and from the cookbook, adapting them with the fields our arrest data has. If you get stuck on something, exit the jupyter notebook using Control-C and push the arrest.ipynb file to your Github repository and send me an email with your question and a link to your file.
+
+  When you are finished, push the arrest.ipynb file to Github.
