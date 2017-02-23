@@ -41,4 +41,9 @@
   print arrests
   ```
 
+  Here are the other checks we want to make:
+
+  1. Missing Data - let's start with `Charge Descrip`
+  2. Outliers - let's look at `Age`
+  3. Outliers - can you calculate the average (median) age for each charge?
   
