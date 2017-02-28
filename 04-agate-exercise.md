@@ -28,7 +28,7 @@ See how you didn't have to type a formula? Agate has it built-in. Let's look at 
 print popchange1016[0]['change']
 ```
 
-Well, that seems like an excessive number of numbers after the decimal point. Maybe we can do something about that. Python has a Decimal library that can do the rounding for us. First we'll write a Python method that will do the rounding, and then we'll add the rounded change to our table:
+Well, that seems like an excessive number of numbers after the decimal point. Maybe we can do something about that. Python has a Decimal library that can do the rounding for us. First we'll write a Python method called `round_change` that will do the rounding, and then we'll use that to add the rounded change to our table:
 
 ```python
 from decimal import Decimal
@@ -47,4 +47,18 @@ Let's see what that looks like:
 print rounded_change[0]['change_rounded']
 ```
 
-Now we sort it.
+Now we sort it using `order_by` and then can use `print_table` to display a subset of the columns (county, state and change_rounded):
+
+```python
+sorted_counties = rounded_change.order_by('change', reverse=True)
+sorted_counties.select(['county', 'state', 'change_rounded']).print_table(max_rows=50)
+```
+
+#### Assignment
+
+In your jupyter notebook file, write instructions to do the following:
+
+    1. Show all of the counties in North Dakota, in order of largest change to smallest
+    2. Show the bottom 50 counties nationwide in terms of population change (the smallest change)
+    3. Show the top 50 counties sorted by 2015 estimated population, with the largest population first
+    4. Calculate an average change for all states and show the state and average in descending order
