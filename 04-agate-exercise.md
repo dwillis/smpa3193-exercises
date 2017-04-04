@@ -2,7 +2,7 @@
 
 #### Percent Change
 
-Here we will import county population estimates from the Census Bureau, calculate the percent change in population from 2010-2015 and print out the 50 fastest growing counties. You can find the CSV file [here](county_population.csv); download it to your class exercise folder.
+Here we will import county population estimates from the Census Bureau, calculate the percent change in population from 2010-2015 and print out the 50 fastest growing counties. You can find the CSV file [here](https://raw.githubusercontent.com/dwillis/smpa3193-exercises/master/county_population.csv); download it to your class exercise folder.
 
 Then, in Terminal, start a jupyter notebook and head to the browser page. Let's call this notebook `population` and instead of calculating percent change in a spreadsheet, we'll do it in Python. For our purpose, percent change is 2016's population compared to 2010.
 
